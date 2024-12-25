@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: arial;
+    background-color: transparent;
+    border: 0;
+    color: white;
+}
+button{
+    outline: 0;
+}
+body{
+    background-color: blue;
+    /*rgb(0, 89, 255)*/
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    font-weight: lighter;
+}
+.body{
+    width: 350px;
+    height: 100vh;
+    max-height: 100vh;
+}
+.amount{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+.amount span{
+    font-weight: bold;
+    font-size: 60px;
+}
+.top{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-family: arial;
+    margin-top: 50px;
+}
+.top select{
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.411);
+    padding: 3px;
+    outline: 0;
+}
+.div,.div1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 35px;
+}
+.div1 button{
+    background-color: rgba(253, 253, 253, 0.295);
+    width: 160px;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.down{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+}
+img{
+    width: 33px;
+}
+.div button{
+    font-size: 35px;
+}
+.fixedbottom{
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#transact img{
+    width: 50px;
+}
+#back{
+    margin-left: 10px;
+}
+.keys{
+    position: absolute;
+    width: 350px;
+    bottom: 70px;
+}

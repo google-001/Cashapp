@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="square-cash-svgrepo-com.svg">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send</title>
+</head>
+<body>
+    <div class="body">
+        <div class="top">
+            <select name="" id="currentcurrency">
+                <option value="1">USD<img src="arrow-down.svg" alt=""></option>
+                <option value="2">NG₦<img src="arrow-down.svg" alt=""></option>
+            </select>
+        </div>
+        <div class="amount">
+            <span id="currency">$</span><span id="amt">0</span>
+        </div>
+        <div class="keys">
+            <div class="div">
+                <button id="one">1</button>
+                <button id="two">2</button>
+                <button id="three">3</button>
+            </div>
+            <div class="div">
+                <button id="four">4</button>
+                <button id="five">5</button>
+                <button id="six">6</button>
+            </div>
+            <div class="div">
+                <button id="seven">7</button>
+                <button id="eight">8</button>
+                <button id="nine">9</button>
+            </div>
+            <div id="back" class="div">
+                <button id="dot">&dot;</button>
+                <button id="zero">0</button>
+                <button id="clear"><img src="arrow-left.svg" alt=""></button>
+            </div>
+            <div class="div1">
+                <button id="request" onclick="window.location = 'borrow.html'">Request</button>
+                <button id="pay" onclick="window.location = 'wallet.html'">Pay</button>
+            </div>
+        </div>
+        <div class="down">
+            <div class="fixedbottom">
+                <button id="bank" onclick="window.location='bank.html'"><img src="bank-svgrepo-com.svg" width="30px" alt=""></button>
+                <button id="card" onclick="window.location = 'wallet.html'"><img src="credit-card-02-svgrepo-com.svg" width="30px" alt=""></button>
+                <button id="transact" onclick="window.location = 'index.html'"><img src="dollar-minimalistic-svgrepo-com (1).svg" width="30px" alt=""></button>
+                <button id="borrow" onclick="window.location = 'borrow.html'"><img src="borrow-svgrepo-com.svg" width="30px" alt=""></button>
+                <button id="user" onclick="window.location = 'transact.html'"><img src="user.svg" width="30px" alt=""></button>
+            </div>
+        </div>
+    </div>
+<script src="index.js">
+    
+</script>
+</body>
+</html>

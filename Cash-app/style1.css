@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-family: arial;
+    text-shadow: 2px 0px 1px black, -2px 0 1px black, 0 2px 1px black, 0 -2px 1px black;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.body{
+    width: 350px;
+
+}
+.up{
+    width: calc(100% + 40px);
+    height: max-content;
+    background-color: blue;
+    position: fixed;
+    top: 0;
+    margin-left: -10px;
+}
+.top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+.second{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(216, 216, 216, 0.432);
+    padding-top: 20px;
+    padding: 20px;
+    justify-self: center;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-top: 140px;
+}
+.one{
+    display: flex;
+    justify-content: space-between;
+}
+.two{
+    display: flex;
+}
+.three{
+    display: flex;
+    justify-content: space-between;
+}
+.overflow{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+.overflow div{
+    color: white;
+    text-align: left;
+}
+.a,.b,.c{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.a button,.b button,.c button{
+    width: 170px;
+    height: 170px;
+    background-color: rgba(216, 216, 216, 0.432);
+    border-radius: 20px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+.money{
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 1px 0px 1px white, -1px 0 1px white, 0 1px 1px white, 0 -1px 1px white;
+}
+.profile{
+    border: 2px solid white;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: -5px;
+}
+.profile img{
+    width: 30px;
+}
+.cashbalancetext{
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 0 black;
+}
+.accountandrouting{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+.two{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+.addcash, .cashout{
+    width: 150px;
+    height: 40px;
+    background: rgba(216, 216, 216, 0.37);
+    border-radius: 100px;
+    font-weight: bolder;
+    font-size: 20px;
+    
+}
+.down{
+    position: fixed;
+    bottom: 0px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+.fixed{
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
+}
+.save{
+    margin-bottom: 10px;
+}
+.img{
+    margin-bottom: 20px;
+}
+.taxes .save{
+    margin-bottom: 20px;
+}
+.taxes .img{
+    margin-bottom: 30px;
+}
+.paychecks .img{
+    margin-bottom: 5px;
+}
+.bitcoin .img{
+    margin-bottom: 5px;
+}

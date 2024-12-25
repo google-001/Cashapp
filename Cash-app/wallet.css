@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: arial;
+    background-color: transparent;
+    border: 0;
+}
+body{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+}
+.body{
+    width: 350px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-shadow: 0px 1px 1px white, 1px 0px 1px white, 0px -1px 1px white;
+}
+.info{
+    font-size: 25px;
+    font-style: oblique;
+}
+.home button{
+    border: 2px solid white;
+    border-radius: 10px;
+}
+input{
+    width: 300px;
+    height: 35px;
+    border: .2px solid white;
+    background-color: rgba(223, 223, 223, 0.315);
+    border-radius: 10px;
+    padding-left: 10px;
+    overflow: hidden;
+    outline: 0;
+}
+.expiry input{
+    width: 133px;
+}
+label{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.cardname, .cardnumber, .expiry, .cvv, .cardtype{
+    display: flex;
+    flex-direction: column;
+}
+.text{
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.month, .year{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-right: 20px;
+}
+.expiry{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.other{
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+}
+.debit,.credit{
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    text-wrap: nowrap;
+    margin-right: 100px;
+}
+.debit label,.credit label{
+    margin: 0;
+    padding: 0;
+}
+.debit input,.credit input{
+    width: 20px;
+    margin-top: -5px;
+    margin-bottom: 20px;
+}
+.submit button{
+    border: 3px double white;
+    padding: 15px;
+    border-radius: 20px;
+    width: 310px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 100px;
+    background: rgba(10, 10, 10, 0.445);
+}
